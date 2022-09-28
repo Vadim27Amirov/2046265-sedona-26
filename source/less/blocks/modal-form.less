@@ -1,3 +1,7 @@
+.modal-form {
+  display: none;
+}
+
 .modal-form--luck {
   font-family: "PT Sans", "Arial", sans-serif;
   position: fixed;
@@ -9,8 +13,10 @@
   z-index: 2;
 }
 
-.modal-form--block {
-  display: none;
+/* При добавлении класса modal-form--opened в разметку открывает нужное окно*/
+
+.modal-form--opened {
+  display: block;
 }
 
 .modal-form__container-luck {
@@ -68,10 +74,6 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
-}
-
-.modal-form--none {
-  display: none;
 }
 
 .modal-form__container-failure {
@@ -165,5 +167,6 @@
     line-height: 26px;
     padding: 18px 122px 14px 123px;
     border: none;
+    margin-bottom: 49px;
   }
 }
